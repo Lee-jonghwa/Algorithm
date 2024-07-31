@@ -18,7 +18,7 @@
 총 26개의 상자가 회전 후, 오른쪽 방 그림의 상태가 된다. A 상자의 낙차가 7로 가장크므로 7을리턴하면 된다.
 회전 결과, B상자의 낙차는6, C상자의 낙차는 1이다.
 '''
-
+'''
 T = int(input())
 
 for tc in range(1, T+1):
@@ -33,7 +33,7 @@ for tc in range(1, T+1):
             if max_diff < fall_diff:
                 max_diff = fall_diff
     print(f'{tc} {max_diff}')
-
+'''
 
 
 def gravity(boxes):
