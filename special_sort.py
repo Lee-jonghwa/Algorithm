@@ -30,3 +30,44 @@ for tc in range(1, T+1):
 #1 10 1 9 2 8 3 7 4 6 5
 #2 89 8 85 11 67 16 60 28 49 39
 #3 98 3 97 9 88 17 75 18 71 21 69 26 64 30 62 36 60 43 59 46
+
+
+'''
+# 강사님풀이
+
+T = int(input())
+
+for tc in range(1, T+1):
+    N = int(input())
+    nums = list(map(int, input().split()))
+    result = []
+    
+    while len(nums) > 0:
+        max_v = max(nums)
+        nums.remove(max_v)
+        result.append(max_v)
+        
+        min_v = min(nums)
+        nums.remove(min_v)
+        result.append(min_v)
+    print(f'#{tc}', *result[:10])
+
+T = int(input())
+for tc in range(1, T + 1):
+    N = int(input())
+    nums = sorted(list(map(int, input().split())))
+    result = []
+    lst_front, lst_back = [], []
+    
+    for i in range(len(nums)):
+        if i < (len(nums) // 2):
+            lst_front.append(nums[i])
+        elif i > (len(nums) // 2) - 1:
+            lst_back.append(nums[i])
+    
+    lst_back.sort(reverse=True)
+    for i in range(5):
+        result.append(lst_back[i])
+        result.append(lst_front[i])
+    print(f'#{tc}', *result)
+'''
