@@ -1,14 +1,16 @@
 def captcha(N, K, sam, pc):
     result = [0]
-    for j in range(K):
-        for i in range(N):
-            if pc[j] == sam[i] and i >= result[-1]:
-                result.append(i)
-                continue
-    if len(result) == K - 1:
-        return 1
-    else:
-        return 0
+    for j in range(K): # 모든 키 값 순회
+        for i in range(N): # 모든 샘플 값 순회
+            if pc[j] == sam[i]: # 값 비교
+                if i > result[-1]: # 순차적으로 큰 값
+                    result.append(i) # idx 추가
+                    break # 더 이상 순회 x
+
+    if len(result) - 1 == K: # 갯수가 같으면
+        return 1 # 1 리턴
+    else: # 갯수가 다르면
+        return 0 # 0 리턴
 
 T = int(input())
 for tc in range(1, T+1):
