@@ -188,7 +188,7 @@ if type == 1:
 else:
     type2(0)
 '''
-
+'''
 path = []
 cnt = 0
 
@@ -209,7 +209,7 @@ def dice(x, sum_v):
 
 dice(0, 0)
 print(cnt)
-
+'''
 
 '''
 
@@ -273,3 +273,7 @@ for tc in range(1, T + 1):
     result = maze(arr, N)
     print(f'#{tc} {result}')
 '''
+
+test = 'JAEZNNZEAJ'
+print(test[0:0+10])
+print(test[::-1])
