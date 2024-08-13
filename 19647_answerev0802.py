@@ -1,3 +1,32 @@
+T = int(input())
+for tc in range(1, T+1):
+    NM = list(map(int, input().split()))
+    N = NM[0]
+    M = NM[1]
+    answer_arr = list(map(int, input().split()))
+    arr = [list(map(int, input().split())) for _ in range(N)]
+    max_v = float('-inf')
+    min_v = float('inf')
+    for n in range(N):
+        cnt = 1
+        score = 0
+        for m in range(M):
+            if answer_arr[m] == arr[n][m]:
+                score += cnt
+                cnt += 1
+            else:
+                cnt = 1
+
+        max_v = max(max_v, score)
+        min_v = min(min_v, score)
+
+    result = max_v - min_v
+    print(f'#{tc} {result}')
+
+
+
+"""
+
 def answer_ev(N, M, ans, arr):
     max_v = 0
     min_v = 100
@@ -26,3 +55,5 @@ for tc in range(1, T+1):
     arr = [list(map(int, input().split())) for i in range(N)]
     result = answer_ev(N, M, ans, arr)
     print(f'#{tc} {result}')
+
+"""
