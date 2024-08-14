@@ -1,3 +1,9 @@
+
+# 4가지 상태 -> 1, 2, 3, 4 (겹치는 영역, 겹치는 선, 겹치는 점, 안 겹침)
+"""
+
+
+
 def ggokjijum(x1, y1, x2, y2, x3, y3, x4, y4):
     if x2 < x3 or x4 < x1 or y2 < y3 or y4 < y1: # 오른쪽, 왼쪽, 위쪽, 아래쪽
         return 4
@@ -14,6 +20,8 @@ for tc in range(1, T + 1):
     x3, y3, x4, y4 = map(int, input().split())
     result = ggokjijum(x1, y1, x2, y2, x3, y3, x4, y4)
     print(f'#{tc} {result}')
+"""
+
 
 
 '''
