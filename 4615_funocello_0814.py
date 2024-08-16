@@ -1,3 +1,25 @@
+# 함수 호출시 어떻게 리턴할 지 생각해보기
+
+def get_reverse_stone(y, x, bang):
+    result = []
+    dy, dx = dir[bang]
+    ny, nx = y, x
+    while True:
+        ny, nx = ny + dy, nx + dx
+        # 배열을 벗어나면
+        if nx < 0 or ny <0 and nx >= N or ny >= N:
+            return []
+        # 빈 칸이면
+        if board[ny][nx] == 0:
+            return []
+        # 해당 색이면
+        if board[ny][nx] == color:
+            break
+        result.append((ny, nx))
+    return result
+
+
+"""
 def ocello(put_s, arr, N, M):
     # 기본 돌 두기
     arr[N // 2][N // 2] = 2    # 백돌 2
@@ -21,17 +43,18 @@ def ocello(put_s, arr, N, M):
 
                 # 배열을 벗어나지 않는 선에서
                 if 0 <= ny < N and 0 <= nx < N:
+                    # 빈칸을 보면
                     if arr[ny][nx] == 0:
                         break # 즉시 중지
 
-                    #  색이 같은 부분을 발견했을 떄
+                    # 색이 같은 부분을 발견했을 떄
                     elif arr[ny][nx] == color:
                         if stones_to_flip: # 뒤집을 돌 있으면
                             for f_y, f_x in stones_to_flip:
                                 arr[f_y][f_x] = color
 
                     else: # 색이 다른 돌 발견하면
-                        stones_to_flip.append(f_y,f_x)# 후보에 추가
+                        stones_to_flip.append((ny,nx))# 후보에 추가
                 else: # 배열을 벗어나면
                     break # 넘기기
 
@@ -55,3 +78,4 @@ for tc in range(1, T+1):
     put_s = [list(map(int, input().split())) for _ in range(M)] # 돌 놓는 경우의 수
     result = ocello(put_s, arr, N, M)
     print(f"#{tc}",*result)
+"""
