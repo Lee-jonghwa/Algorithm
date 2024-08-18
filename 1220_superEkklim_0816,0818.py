@@ -1,3 +1,31 @@
+
+# 한 열에 N-S 순서로 있으면 교착
+# 1은 N극 성질 2는 S극 성질
+
+def magnetic():
+    cnt = 0
+    for x in range(N): # 매 열 순회
+        ismag = False # 교착 확인
+        for y in range(N):
+            if mag[y][x] == 1: # N 이면
+                ismag = True
+            elif mag[y][x] == 2:
+                if ismag == True:
+                    cnt += 1
+                    ismag = False
+
+    return cnt
+
+for tc in range(1, 11):
+    N = int(input())
+    mag = [list(map(int, input().split())) for _ in range(N)]
+    result = magnetic()
+    print(f'#{tc} {result}')
+
+
+
+
+"""
 # 시간이 흐른 뒤에 자성체들이 서로 충돌하여 테이블 위에 남아있는 교착 상태의 개수를 구하라.
 
 # 반대 방향으로 움직이는 자성체가 하나라도 있으면 교착 상태에 빠져 움직이지 않는다.
@@ -41,3 +69,4 @@ for tc in range(1, 11):
     arr = [list(map(int, input().split())) for _ in range(N)]
     result = uuuuuuuu_magneetic(arr)
     print(f'#{tc} {result}')
+"""

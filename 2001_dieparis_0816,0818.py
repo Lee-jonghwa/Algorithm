@@ -1,3 +1,30 @@
+# 최대한 많은 파리
+
+def dieparis():
+    max_v = 0
+
+    for y in range(N):
+        for x in range(N):
+            sum_v = 0
+            for i in range(y, y+M):
+                for j in range(x, x+M):
+                    if i < N and j < N:
+                        sum_v += flies[i][j]
+            if max_v < sum_v:
+                max_v = sum_v
+
+    return max_v
+
+
+T = int(input())
+for tc in range(1, T+1):
+    N, M = map(int, input().split())
+    flies = [list(map(int, input().split())) for _ in range(N)]
+    result = dieparis()
+    print(f'#{tc} {result}')
+
+
+"""
 # N x N 배열 안의 숫자
 # M x M 크기의 파리채
 
@@ -26,3 +53,5 @@ for tc in range(1, T+1):
     arr = [list(map(int, input().split())) for _ in range(N)]
     result = die_paris(arr, N, M)
     print(f'#{tc} {result}')
+
+"""

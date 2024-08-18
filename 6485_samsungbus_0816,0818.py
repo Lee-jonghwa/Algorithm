@@ -1,3 +1,30 @@
+# 5,000 개 정류장
+# 각 테스트 케이스의 첫 번째 줄에는 하나의 정수 N
+# N개의 줄의 i번째 줄에는 두 정수 Ai, Bi
+# 다음 줄에는 하나의 정수 P
+# 다음 P개의 줄의 j번째 줄에는 하나의 정수 Cj
+
+def ssbus():
+    bus_stops = [0] * 5001
+    for bus in buses:
+        for i in range(bus[0], bus[1] + 1):
+            bus_stops[i] += 1
+    res_lst = []
+    for j in tar:
+        res_lst.append(bus_stops[j])
+    return res_lst
+
+
+T = int(input())
+for tc in range(1, T + 1):
+    N = int(input())
+    buses = [list(map(int, input().split())) for _ in range(N)]
+    P = int(input())
+    tar = [int(input()) for _ in range(P)]
+    result = ssbus()
+    print(f'#{tc}', *result)
+
+"""
 T = int(input())
 for tc in range(1, T+1):
     N = int(input())
@@ -15,6 +42,7 @@ for tc in range(1, T+1):
         Cj = int(input())
         result.append(bus_stop[Cj])
     print(f'#{tc}', *result)
+"""
 
 """
 # Ai: 시점, Bj: 종점

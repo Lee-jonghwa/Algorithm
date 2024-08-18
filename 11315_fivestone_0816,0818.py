@@ -1,4 +1,31 @@
 
+# 오른쪽, 오른쪽아래, 아래, 왼쪽아래
+directions = [(0,1),(1,1),(1,0),(1,-1)]
+
+def omok(game):
+    for y in range(N):
+        for x in range(N):
+            if game[y][x] == 'o':
+                for dy, dx in directions:
+                    cnt = 1  # 오목 세기
+                    for k in range(1, 5):
+                        ny, nx = y + dy * k, x + dx * k
+                        if 0 <= ny < N and 0 <= nx < N and game[ny][nx] == 'o':
+                            cnt += 1
+                            if cnt == 5:
+                                return "YES"
+                        else:
+                            break # 안 나오면 더 갈 필요가 없음
+    return "NO"
+
+
+T = int(input())
+for tc in range(1, T+1):
+    N = int(input())
+    game = [input() for _ in range(N)]
+    result = omok(game)
+    print(f'#{tc} {result}')
+
 
 
 
