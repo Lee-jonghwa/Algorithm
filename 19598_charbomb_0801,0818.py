@@ -1,3 +1,36 @@
+
+# 차르봄바는 P 크기만큼으로
+# 가로, 세로 방향
+# N x N 크기의 마을의
+# 가장 많은 바이러스를 제거했을 때 제거된 바이러스의 수를 구하여라
+
+def charbomb():
+    max_v = 0
+
+    for y in range(N):
+        for x in range(N):
+            # 이번 합계값 초기화, 터진자리 포함
+            sum_v = town[y][x]
+            for dy, dx in directions:
+                for k in range(1, P+1): # 제자리 제외, P까지 가야함
+                    ny, nx = y + dy * k, x + dx * k
+                    if 0 <= ny < N and 0 <= nx < N: # 배열을 벗어나지 않을 때
+                        sum_v += town[ny][nx]
+            if max_v < sum_v:
+                max_v = sum_v
+
+    return max_v
+
+T = int(input())
+for tc in range(1, T+1):
+    N, P = map(int, input().split())
+    town = [list(map(int, input().split())) for _ in range(N)]
+    directions = [(1,0),(-1,0),(0,1),(0,-1)]
+    result = charbomb()
+    print(f'#{tc} {result}')
+
+
+"""
 def bomb(N, P, arr):
     dy = [-1, 1, 0, 0]
     dx = [0, 0, -1, 1]
@@ -23,6 +56,9 @@ for tc in range(1, T+1):
     print(f'#{tc} {result}')
 
 """
+
+"""
+
 T = int(input())
 
 directions = [(0, 1), (-1,0), (0, -1), (1, 0)] # 우 상 좌 하

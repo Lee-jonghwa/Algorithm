@@ -1,3 +1,34 @@
+
+# 특정 좌표를 기준으로, "우측 하단"의 방향으로 사각형을 그릴 수 있다. -> y 값이 더 크고 x값이 같거나 큼
+# 왼쪽 상단 좌표의 값과 우측 하단 좌표의 값이 동일해야 한다.
+# 크기의 게임판이 주어졌을 때, 최대 면적의 사각형을 규칙대로 그릴 수 있는 총 사각형의 개수
+
+def max_rect(arr, N):
+    cnt = 0
+    max_v = 0
+
+    for y in range(N-1): # 만족하려면 마지막 전행까지만 가야함
+        for x in range(N):
+            for i in range(y+1, N): # y보다 큰 값
+                for j in range(x, N): # x와 같아도 됨
+                    if arr[y][x] == arr[i][j]:
+                        area = (i - y + 1) * (j - x + 1)
+                        if max_v < area:
+                            max_v = area
+                            cnt = 0
+                        if area == max_v:
+                            cnt += 1
+
+    return cnt
+
+T = int(input())
+for tc in range(1, T+1):
+    N = int(input())  # 게임판의 크기 N
+    arr = [list(map(int, input().split())) for _ in range(N)]  # N x N 게임판
+
+    result = max_rect(arr, N)
+    print(f'#{tc} {result}')
+"""
 def cnt_max_square(arr):
     max_area = 0
     cnt = 0
@@ -22,6 +53,8 @@ for tc in range(1, T + 1):
     arr = [list(map(int, input().split())) for _ in range(N)]
     result = cnt_max_square(arr)
     print(f'#{tc} {result}')
+"""
+
 
 """
 T = int(input())

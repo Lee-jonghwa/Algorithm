@@ -1,7 +1,55 @@
+
+# N X N 크기의 단어 퍼즐
+# 특정 길이 K를 갖는 단어가 들어갈 수 있는 자리의 수를
+
+# 퍼즐의 각 셀 중, 흰색 부분은 1, 검은색 부분은 0 으로 주어진다.
+
+# 가로순회 하면서 K인 것 찾기
+# 세로순회 하면서 K인 것 찾기
+
+def find_word(arr, K):
+
+    cnt = 0
+
+    # 가로 순회
+    for y in range(N):
+        word_len = 0  # 글자 길이 저장
+        for x in range(N):
+            if arr[y][x] == 1:  # 흰 부분 만나면
+                word_len += 1 # word_len 1 증가
+            if arr[y][x] == 0 or x == N - 1:  # 까만부분 만나거나 열의 마지막이면
+                if word_len == K: # 그때 word_len가 K이면
+                    cnt += 1
+                word_len =0
+
+    # 세로 순회
+    for j in range(N):
+        word_len = 0  # 글자 길이 저장
+        for i in range(N):
+            if arr[i][j] == 1:  # 흰 부분 만나면
+                word_len += 1 # word_len 1 증가
+            if arr[i][j] == 0 or i == N - 1:  # 까만부분 만나거나 행의 마지막이면
+                if word_len == K: # 그때 word_len가 K이면
+                    cnt += 1
+                word_len =0
+
+    return cnt
+
+
 T = int(input())
 for tc in range(1, T+1):
     N, K = map(int, input().split())
-    puzzle = [list(map(int, input().split())) for _ in range(N)]
+    arr = [list(map(int, input().split())) for _ in range(N)]
+
+    result = find_word(arr, K)
+    print(f'#{tc} {result}')
+
+
+"""
+T = int(input())
+for tc in range(1, T+1):,
+    N, K = map(int, input().split())
+    puzzle = [list(map(int, input().split())) for _ in range(N)],
     cnt = 0
 
     # 행 검사
@@ -27,7 +75,7 @@ for tc in range(1, T+1):
 
     print(f'#{tc} {cnt}')
 
-
+"""
 
 
 
