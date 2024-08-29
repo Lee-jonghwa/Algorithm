@@ -1,3 +1,37 @@
+import heapq
+
+def ugly_numbers(k_values):
+    heap = []
+    heapq.heappush(heap, 1) # 가장 첫 ugly number 1을 push
+    visited = set() # ugly number 중 중복 제거
+    visited.add(1) # visited에 1 추가
+
+    # ugly number를 저장하는 리스트
+    ugly_numbers_list = []
+
+    # ugly number 오름차순 생성
+    while len(ugly_numbers_list) < max(k_values): # 주어진 값 까지만 생성
+        current_ugly = heapq.heappop(heap) # 현재 ugly 팝
+        ugly_numbers_list.append(current_ugly) # 현재 ugly 리스트에 저장
+
+        for factor in [2, 3, 5]: # 2, 3, 5를 번갈아가변서
+            new_ugly = current_ugly * factor # 일단 곱해보기
+            if new_ugly not in visited: # visited가 없으면
+                visited.add(new_ugly) # 방문추가
+                heapq.heappush(heap, new_ugly) # 힙 추가
+
+    # 각 K 번째에 해당하는 ugly number 를 반환합니다.
+    result = [ugly_numbers_list[k - 1] for k in k_values]
+    return result
+
+
+# 입력
+Q = int(input())  # 찾는 숫자 개수
+k_values = list(map(int, input().split())) # k 번째 값
+
+# 출력
+result = ugly_numbers(k_values)
+print(*result)
 
 """
 # Function to get the nth ugly number
@@ -171,7 +205,7 @@ print(uglynumber(a),uglynumber(b),uglynumber(c),)
 # This code is contributed by Shubham Singh
 
 """
-
+"""
 # Python Program to implement
 # the above approach
 
@@ -253,3 +287,4 @@ a, b, c = map(int, input().split())
 print(uglynumber(a),uglynumber(b),uglynumber(c))
 
 # This code is contributed by code_hunt.
+"""
