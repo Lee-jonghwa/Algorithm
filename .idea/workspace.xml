@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffcd8dd5-e574-45a1-9ed1-b166d59e09d7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0828_BST.py" beforeDir="false" afterPath="$PROJECT_DIR$/0828_BST.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/20097_uglynumber_0828.py" beforeDir="false" afterPath="$PROJECT_DIR$/20097_uglynumber_0828.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20223_subtree_0827.py" beforeDir="false" afterPath="$PROJECT_DIR$/20223_subtree_0827.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20224_binarysearch_0827.py" beforeDir="false" afterPath="$PROJECT_DIR$/20224_binarysearch_0827.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20238_binaryheap_0828.py" beforeDir="false" afterPath="$PROJECT_DIR$/20238_binaryheap_0828.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20239_nodesum_0828.py" beforeDir="false" afterPath="$PROJECT_DIR$/20239_nodesum_0828.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autocal_0810.py" beforeDir="false" afterPath="$PROJECT_DIR$/19817_autocal_0810.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gwarofriends_0810.py" beforeDir="false" afterPath="$PROJECT_DIR$/19783_gwarofriends_0810,0830.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +37,7 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="2l0F4jlC1AJ5wqnLmNSiXLW6KMb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,8 +48,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
-  <component name="RunManager" selected="Python.1288_insomnia_0829">
-    <configuration name="1288_insomnia_0829" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.22023_custommainboard_0830">
+    <configuration name="10726_binaryexpression_0830" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -53,7 +61,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1288_insomnia_0829.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/10726_binaryexpression_0830.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -62,7 +70,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="18620_fibo_0829" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="19783_gwarofriends_0810,0830" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -74,7 +82,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/18620_fibo_0829.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/19783_gwarofriends_0810,0830.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -83,7 +91,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="18884_miduniv_0829" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="19817_autocal_0810" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -95,7 +103,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/18884_miduniv_0829.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/19817_autocal_0810.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -104,7 +112,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="19861_produce101_0829" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="20238_binaryheap_0828" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -116,7 +124,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/19861_produce101_0829.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/20238_binaryheap_0828.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -125,7 +133,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="22109_mamamoo_0829" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="22023_custommainboard_0830" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -137,7 +145,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/22109_mamamoo_0829.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/22023_custommainboard_0830.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -147,19 +155,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.22109_mamamoo_0829" />
-      <item itemvalue="Python.18884_miduniv_0829" />
-      <item itemvalue="Python.18620_fibo_0829" />
-      <item itemvalue="Python.19861_produce101_0829" />
-      <item itemvalue="Python.1288_insomnia_0829" />
+      <item itemvalue="Python.10726_binaryexpression_0830" />
+      <item itemvalue="Python.20238_binaryheap_0828" />
+      <item itemvalue="Python.19783_gwarofriends_0810,0830" />
+      <item itemvalue="Python.19817_autocal_0810" />
+      <item itemvalue="Python.22023_custommainboard_0830" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.1288_insomnia_0829" />
-        <item itemvalue="Python.18884_miduniv_0829" />
-        <item itemvalue="Python.19861_produce101_0829" />
-        <item itemvalue="Python.18620_fibo_0829" />
-        <item itemvalue="Python.22109_mamamoo_0829" />
+        <item itemvalue="Python.22023_custommainboard_0830" />
+        <item itemvalue="Python.19817_autocal_0810" />
+        <item itemvalue="Python.19783_gwarofriends_0810,0830" />
+        <item itemvalue="Python.20238_binaryheap_0828" />
+        <item itemvalue="Python.10726_binaryexpression_0830" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +199,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/20224_binarysearch_0827.py</url>
-          <line>40</line>
+          <line>60</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -201,7 +209,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/20097_uglynumber_0828.py</url>
-          <line>170</line>
+          <line>185</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -213,6 +221,51 @@
           <url>file://$PROJECT_DIR$/18620_fibo_0829.py</url>
           <line>11</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/20259_binum2_0830.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/10726_binaryexpression_0830.py</url>
+          <line>68</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/10726_binaryexpression_0830.py</url>
+          <line>45</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/20223_subtree_0827.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/20223_subtree_0827.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/20223_subtree_0827.py</url>
+          <line>62</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/20223_subtree_0827.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/20238_binaryheap_0828.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/19817_autocal_0810.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,3 +1,23 @@
+def BST(n):
+    global node # 재귀가 필요하므로 global
+    if n <= N:  # n이 전체 노드의 N보다 작을때만 수행
+        BST(n*2) # 왼쪽
+        tree[n] = node  # 해당 자리에 node 넣음
+        node += 1
+        BST(n*2+1) # 오른쪽
+
+T = int(input())
+for tc in range(1, T+1):
+    N = int(input())
+    # 기본 인덱스
+    tree = [0 for i in range(N+1)]
+    node = 1 # 시작 노드 1, 1 ~ N까지의 수 넣음
+    BST(1)
+    print(f'#{tc} {tree[1]} {tree[N//2]}')
+
+
+"""
+
 # 왼쪽 자식의 인덱스 : n * 2
 # 오른쪽 자식의 인덱스 : n * 2 + 1
 
@@ -17,7 +37,7 @@ for tc in range(1, T+1):
     node = 1
     BST(1)
     print(f'#{tc} {tree[1]} {tree[N//2]}')
-
+"""
 
 
 """

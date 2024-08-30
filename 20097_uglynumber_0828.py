@@ -1,3 +1,18 @@
+# heappush 하면 알아서 작은 순서대로 진행함
+# 계속 구하되 중복만 체크하기
+
+import heapq
+def ugly_numbers(k_values):
+    heap = []
+    heapq.heappush(heap, 1)  # 첫자리는 1
+
+
+
+Q = int(input())
+k_values = list(map(int,input().split()))
+
+"""
+
 import heapq
 
 def ugly_numbers(k_values):
@@ -32,7 +47,7 @@ k_values = list(map(int, input().split())) # k 번째 값
 # 출력
 result = ugly_numbers(k_values)
 print(*result)
-
+"""
 """
 # Function to get the nth ugly number
 

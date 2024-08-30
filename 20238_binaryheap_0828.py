@@ -1,4 +1,25 @@
 import heapq
+
+T = int(input())
+for tc in range(1, T+1):
+    N = int(input())
+    heap = []
+    sum_v = 0 # 조상노드 총합
+    # tree 그리기
+    for num in map(int,input().split()):
+        heapq.heappush(heap, num)
+
+    # 조상 찾기
+    idx = N - 1 #최대 인덱스 맞추기
+    while idx > 0: # heap을 벗어나지 않는 선에서
+        idx = (idx - 1)//2 # 반올림 하지 않도록 만들기
+        sum_v += heap[idx]
+
+    print(f'#{tc} {sum_v}')
+
+
+"""
+import heapq
 from heapq import heappush, heappop
 
 T = int(input())
@@ -16,7 +37,7 @@ for tc in range(1, T+1):
 
     print(f'#{tc} {sum_v}')
 
-
+"""
 
 """
 '''

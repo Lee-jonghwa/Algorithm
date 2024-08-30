@@ -1,3 +1,29 @@
+# 치트키는 eval함수 사용
+
+# 처음에는 +부터 기준으로 분리 --> -기준으로 분리
+# 주의: 첫 번째 문자가 -인경우
+
+ex = input()
+# 첫 번째 문자가 '-'인 경우 처리
+if ex[0] == '-':
+    ex = '0' + ex
+
+# 덧셈 기호를 기준으로 분리
+words = ex.split("+")
+result = 0
+
+for word in words:
+    # 뺄셈 기호를 기준으로 분리
+    word = word.split('-')
+    # 첫 요소는 더해줄 값
+    f_result = int(word[0])
+    # 나머지 요소들은 빼줄 값
+    for i in range(1, len(word)):
+        f_result -= int(word[i])
+    result += f_result
+print(result)
+
+"""
 # + 가 있으면 더하고, - 가 있으면 빼기를 하는 계산기
 
 # 스택으로 풀어보자! -> 포기~
@@ -27,3 +53,5 @@ if num: # 숫자가 있으면
         result -= int(num)
 
 print(result)
+
+"""

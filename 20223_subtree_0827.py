@@ -1,5 +1,39 @@
-# subtree
 
+# subtree 구하기
+def subtree(N):
+    global cnt
+    for i in range(2):  # 양쪽을 순회하면서
+        if tree[i][N]: # 자식이 있으면
+            cnt += 1 # 같은 레벨이라도 상관 없음
+            n = tree[i][N] # 자식 노드로 이동
+            subtree(n)
+
+
+T = int(input())
+for tc in range(1, T+1):
+    E, N = map(int, input().split())
+    temp = list(map(int,input().split()))
+    # tree 초기화, 노드 번호가 1 ~ E+1까지 있음
+    tree = [[0] * (E+2) for _ in range(2)]
+    # 자기 자신도 count
+    cnt = 1
+
+    # tree 완성
+    for i in range(E): # 5 번 부여됨
+        # 부모 - 자식 순서
+        p, c = temp[i*2], temp[i*2+1]
+        # tree의 p번째 자리의 왼쪽 노드
+        if tree[0][p] == 0:  # 왼쪽 노드에 아무것도 없으면
+            tree[0][p] = c  # 값 넣기
+        else:
+            tree[1][p] = c
+
+    subtree(N)
+    print(f'#{tc} {cnt}')
+
+
+"""
+# subtree
 
 def sub_tree(node):
     global cnt
@@ -28,7 +62,7 @@ for tc in range(1, T + 1):
     cnt = 1
     sub_tree(N)
     print(f'#{tc} {cnt}')
-
+"""
 """
 def binarytree(node):
     global cnt
