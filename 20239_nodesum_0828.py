@@ -1,6 +1,26 @@
 T = int(input())
 for tc in range(1, T+1):
     N, M, L = map(int, input().split())
+    tree = [0]*(N+1) # 트리 초기화
+
+    for _ in range(M):
+        idx, value = map(int, input().split()) # 주어지는 값들에서
+        tree[idx] = value
+
+    for i in range(N, 0, -1):
+        if i//2 >= 0: # 트리를 벗어나지 않는 선에서
+            tree[i//2] += tree[i]
+
+    print(f'#{tc} {tree[L]}')
+
+
+
+
+
+"""
+T = int(input())
+for tc in range(1, T+1):
+    N, M, L = map(int, input().split())
     tree = [0] * (N+1)  # 트리 초기화
     for i in range(M):
         node, value = map(int, input().split())
@@ -13,6 +33,8 @@ for tc in range(1, T+1):
     result = tree[L]
 
     print(f'#{tc} {result}')
+"""
+
 
 """
 T = int(input())

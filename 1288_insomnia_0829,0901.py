@@ -7,16 +7,16 @@ for tc in range(1, T+1):
     N = int(input())
     used = [0] * 10 # 0~9까지 사용됐는지 확인하는 배열
     cnt = 0
-    num = 0
+    sheeps = N # 첫 양 N
     while True: # N이 유효한 동안
-        num += N
-        div = num
         if sum(used) == 10: # 모두 사용되면
             break
-        for _ in range(len(str(N))): #N의 자리수 만큼
-            used[num%10] = 1
-            num = num//10
+        temp = sheeps
+        for _ in range(len(str(sheeps))): #N의 자리수 만큼
+            used[temp%10] = 1 # 1의 자리수 만큼 줄임
+            temp = temp//10
         cnt += 1
+        sheeps += N
 
 
-    print(f'#{tc} {cnt}')
+    print(f'#{tc} {cnt*N}')

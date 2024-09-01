@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffcd8dd5-e574-45a1-9ed1-b166d59e09d7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/22109_mamamoo_0829,0901.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/20097_uglynumber_0828.py" beforeDir="false" afterPath="$PROJECT_DIR$/20097_uglynumber_0828.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1288_insomnia_0829.py" beforeDir="false" afterPath="$PROJECT_DIR$/1288_insomnia_0829,0901.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/20223_subtree_0827.py" beforeDir="false" afterPath="$PROJECT_DIR$/20223_subtree_0827.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/20224_binarysearch_0827.py" beforeDir="false" afterPath="$PROJECT_DIR$/20224_binarysearch_0827.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/20238_binaryheap_0828.py" beforeDir="false" afterPath="$PROJECT_DIR$/20238_binaryheap_0828.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/20239_nodesum_0828.py" beforeDir="false" afterPath="$PROJECT_DIR$/20239_nodesum_0828.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autocal_0810.py" beforeDir="false" afterPath="$PROJECT_DIR$/19817_autocal_0810.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gwarofriends_0810.py" beforeDir="false" afterPath="$PROJECT_DIR$/19783_gwarofriends_0810,0830.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22109_mamamoo_0829.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +46,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.updates" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Python.22023_custommainboard_0830">
-    <configuration name="10726_binaryexpression_0830" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.1961_numarrayturn_0901">
+    <configuration name="1940_RCcar_0901" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -61,7 +63,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/10726_binaryexpression_0830.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1940_RCcar_0901.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -70,7 +72,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="19783_gwarofriends_0810,0830" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="1948_datecal_0901" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -82,7 +84,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/19783_gwarofriends_0810,0830.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1948_datecal_0901.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -91,7 +93,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="19817_autocal_0810" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="1959_twostr_0901" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -103,7 +105,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/19817_autocal_0810.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1959_twostr_0901.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -112,7 +114,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="20238_binaryheap_0828" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="1961_numarrayturn_0901" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -124,7 +126,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/20238_binaryheap_0828.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1961_numarrayturn_0901.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -133,7 +135,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="22023_custommainboard_0830" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="2007_patternlength_0901" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -145,7 +147,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/22023_custommainboard_0830.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2007_patternlength_0901.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,19 +157,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.10726_binaryexpression_0830" />
-      <item itemvalue="Python.20238_binaryheap_0828" />
-      <item itemvalue="Python.19783_gwarofriends_0810,0830" />
-      <item itemvalue="Python.19817_autocal_0810" />
-      <item itemvalue="Python.22023_custommainboard_0830" />
+      <item itemvalue="Python.1959_twostr_0901" />
+      <item itemvalue="Python.2007_patternlength_0901" />
+      <item itemvalue="Python.1948_datecal_0901" />
+      <item itemvalue="Python.1940_RCcar_0901" />
+      <item itemvalue="Python.1961_numarrayturn_0901" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.22023_custommainboard_0830" />
-        <item itemvalue="Python.19817_autocal_0810" />
-        <item itemvalue="Python.19783_gwarofriends_0810,0830" />
-        <item itemvalue="Python.20238_binaryheap_0828" />
-        <item itemvalue="Python.10726_binaryexpression_0830" />
+        <item itemvalue="Python.1961_numarrayturn_0901" />
+        <item itemvalue="Python.1940_RCcar_0901" />
+        <item itemvalue="Python.1948_datecal_0901" />
+        <item itemvalue="Python.2007_patternlength_0901" />
+        <item itemvalue="Python.1959_twostr_0901" />
       </list>
     </recent_temporary>
   </component>
@@ -179,8 +181,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724308897492</updated>
+      <workItem from="1725164428731" duration="768000" />
+      <workItem from="1725165242259" duration="827000" />
+      <workItem from="1725167336250" duration="7000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -199,12 +207,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/20224_binarysearch_0827.py</url>
-          <line>60</line>
+          <line>87</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/19899_navigation_0817.py</url>
-          <line>24</line>
+          <line>59</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -213,8 +221,8 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/22109_mamamoo_0829.py</url>
-          <line>8</line>
+          <url>file://$PROJECT_DIR$/22109_mamamoo_0829,0901.py</url>
+          <line>30</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -238,34 +246,29 @@
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/20223_subtree_0827.py</url>
-          <line>54</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/20223_subtree_0827.py</url>
-          <line>55</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/20223_subtree_0827.py</url>
-          <line>62</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/20223_subtree_0827.py</url>
-          <line>30</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/20238_binaryheap_0828.py</url>
-          <line>13</line>
+          <line>36</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/19817_autocal_0810.py</url>
           <line>14</line>
           <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/22109_mamamoo_0829,0901.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/1288_insomnia_0829,0901.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/1948_datecal_0901.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

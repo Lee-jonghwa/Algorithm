@@ -1,3 +1,26 @@
+
+import heapq
+
+T = int(input())
+for tc in range(1, T+1):
+    N = int(input())
+    nums = list(map(int, input().split()))
+    heap = []
+    for num in nums: # 주어진 숫자에 대해서
+        heapq.heappush(heap, num) # 힙 만들기
+
+    sum_v = 0
+    idx = N-1 # 시작을 가장 마지막
+    while idx > 0: # heap을 벗어나지 않는 선에서
+        idx = (idx-1)//2
+        sum_v += heap[idx]
+
+    print(f'#{tc} {sum_v}')
+
+
+
+
+"""
 import heapq
 
 T = int(input())
@@ -16,7 +39,7 @@ for tc in range(1, T+1):
         sum_v += heap[idx]
 
     print(f'#{tc} {sum_v}')
-
+"""
 
 """
 import heapq

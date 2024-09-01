@@ -1,4 +1,42 @@
+def subtree(N):
+    global cnt
 
+    # for를 해야 꼭 다음 것까지 도니까 for 꼭 필요!
+    for i in range(2): # 양쪽을 보면서
+        if tree[i][N]: # 값이 있으면
+            cnt +=1
+            subtree(tree[i][N])
+
+
+T = int(input())
+for tc in range(1, T+1):
+    E, N = map(int, input().split()) # E: 간선의 개수, N: subtree를 구하는 root node
+    arr = list(map(int, input().split()))
+
+    # 트리 초기화 (총 원소 개수는 E+1, 인덱스 맞춤
+    # 1행은 왼쪽, 2행은 오른쪽
+    tree = [[0] * (E + 2) for _ in range(2)]
+
+    for i in range(0, len(arr), 2):
+        p = arr[i]
+        c = arr[i+1]
+
+        if tree[0][p] == 0:
+            tree[0][p] = c
+
+        else:
+            tree[1][p] = c
+
+    cnt = 1 # 시작 노드는 항상 해당 됨
+
+    subtree(N)
+    print(f'#{tc} {cnt}')
+
+
+
+
+
+"""
 # subtree 구하기
 def subtree(N):
     global cnt
@@ -31,7 +69,7 @@ for tc in range(1, T+1):
     subtree(N)
     print(f'#{tc} {cnt}')
 
-
+"""
 """
 # subtree
 
