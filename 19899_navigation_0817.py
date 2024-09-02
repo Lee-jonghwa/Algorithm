@@ -1,3 +1,33 @@
+def dfs(v, B, visited, depth):
+    global min_depth
+
+    if v == B:
+        min_depth = min(min_depth, depth)  # 현재 경로의 깊이를 최단 경로와 비교
+        return
+
+    for w in arr[v]:
+        if not visited[w]:
+            visited[w] = True
+            dfs(w, B, visited, depth + 1)  # 다음 노드로 이동할 때 깊이를 증가
+            visited[w] = False  # 다른 경로를 탐색하기 위해 방문 해제
+
+A, B = map(int, input().split())
+arr = [[], [3, 5, 6], [1, 4], [5], [1], [1], []]
+N = 6
+
+visited = [False] * (N + 1)
+min_depth = float('inf')  # 최단 경로를 무한대로 초기화
+visited[A] = True  # 시작 노드 방문 처리
+
+dfs(A, B, visited, 0)
+
+if min_depth == float('inf'):
+    print(0)  # 경로가 없는 경우
+else:
+    print(min_depth)
+
+
+"""
 def dfs(A, B, N): # s: 시작 정점, N: 노드 개수
     # 준비
     visited = [0] * (N + 1) # visited 생성
@@ -5,7 +35,7 @@ def dfs(A, B, N): # s: 시작 정점, N: 노드 개수
     visited[A] = 1
     stack.append(A) # 경로 확인
     # 처리
-    while True: # 무한루프
+    while v != B: # 무한루프
         v = stack.pop()
 
         if v == B:
@@ -15,6 +45,7 @@ def dfs(A, B, N): # s: 시작 정점, N: 노드 개수
             if visited[w] == 0: # 방문한 적 없고 값이 있는
                 stack.append(w) # 현재 정점 push
                 visited[w] = visited[v] + 1
+    return 0
 
 A, B = map(int, input().split())
 arr = [[],[3, 5, 6],[1, 4],[5],[1],[1],[]]
@@ -24,12 +55,7 @@ visited = [0] * (7)
 visited[A] = 1  # 방문표시
 result = dfs(A, B, N)
 print(result)
-
-
-
-
-
-
+"""
 
 
 """
