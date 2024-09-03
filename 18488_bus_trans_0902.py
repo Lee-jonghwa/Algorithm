@@ -38,9 +38,9 @@ k = int(input())
 # 각 버스의 정보를 저장할 리스트
 buses = []
 for _ in range(k):
-    b, x1, y1, x2, y2 = map(int, input().split())
+    bus_id, x1, y1, x2, y2 = map(int, input().split())
     # 버스의 시작점과 끝점을 저장하며, x1, x2, y1, y2는 범위로 정렬
-    buses.append({'id': b, 'x1': min(x1, x2), 'y1': min(y1, y2), 'x2': max(x1, x2), 'y2': max(y1, y2)})
+    buses.append({'bus_id': bus_id, 'x1': min(x1, x2), 'y1': min(y1, y2), 'x2': max(x1, x2), 'y2': max(y1, y2)})
 
 # 마지막 줄 입력: 출발지 (sx, sy)와 목적지 (dx, dy)
 sx, sy, dx, dy = map(int, input().split())
@@ -55,23 +55,23 @@ for i in range(k):
 
     # 출발지 (sx, sy)를 포함하는 버스를 찾음
     if bus['x1'] <= sx <= bus['x2'] and bus['y1'] <= sy <= bus['y2']:
-        start_buses.add(bus['id'])  # 출발지에서 탈 수 있는 버스 목록에 추가
+        start_buses.add(bus['bus_id'])  # 출발지에서 탈 수 있는 버스 목록에 추가
 
     # 목적지 (dx, dy)를 포함하는 버스를 찾음
     if bus['x1'] <= dx <= bus['x2'] and bus['y1'] <= dy <= bus['y2']:
-        end_buses.add(bus['id'])  # 목적지에 도달할 수 있는 버스 목록에 추가
+        end_buses.add(bus['bus_id'])  # 목적지에 도달할 수 있는 버스 목록에 추가
 
     # 현재 버스와 다른 버스들의 경로가 겹치는지 확인하고, 겹치면 연결 정보를 기록
     for j in range(i + 1, k):
         other_bus = buses[j]
         if is_overlap(bus, other_bus):  # 경로가 겹치는지 확인
             # bus_graph 딕셔너리에 연결된 버스를 추가
-            if bus['id'] not in bus_graph:
-                bus_graph[bus['id']] = []  # 키가 없으면 리스트로 초기화
-            if other_bus['id'] not in bus_graph:
-                bus_graph[other_bus['id']] = []  # 키가 없으면 리스트로 초기화
-            bus_graph[bus['id']].append(other_bus['id'])  # 양방향 연결
-            bus_graph[other_bus['id']].append(bus['id'])  # 양방향 연결
+            if bus['bus_id'] not in bus_graph:
+                bus_graph[bus['bus_id']] = []  # 키가 없으면 리스트로 초기화
+            if other_bus['bus_id'] not in bus_graph:
+                bus_graph[other_bus['bus_id']] = []  # 키가 없으면 리스트로 초기화
+            bus_graph[bus['bus_id']].append(other_bus['bus_id'])  # 양방향 연결
+            bus_graph[other_bus['bus_id']].append(bus['bus_id'])  # 양방향 연결
 
 # BFS를 사용하여 출발지에서 목적지까지의 최소 환승 횟수를 계산
 result = bfs(start_buses, end_buses, bus_graph)
