@@ -1,3 +1,38 @@
+N, Q = map(int, input().split())
+
+# x1, x2, y, 통나무번호
+logs = [list(map(int, input().split())) + [i+1] for i in range(N)]
+
+questions = [list(map(int, input().split())) for _ in range(Q)]
+
+# 첫 요소 기준으로 정렬
+logs.sort()
+
+log_group = [0] * 1000001  # 통나무 갯수에 맞게 초기화
+last = -1  # 가장 오른쪽 끝 x 좌표
+
+group_num = 0 # 현재 그룹 번호
+
+for log in logs:
+    # 왼쪽 끝
+    if log[0] <= last:
+        # log[0]: x1, log[1]: x2, log[2]: y, log[3]: 통나무 번호
+        log_group[log[3]] = group_num
+
+    else:
+        group_num += 1
+        log_group[log[3]] = group_num
+
+    # 오른쪽 끝 갱신
+    if last < log[1]:
+        last = log[1]
+
+for question in questions:
+    if log_group[question[0]] == log_group[question[1]]:
+        print(1)
+    else:
+        print(0)
+
 """
 N, Q = map(int, input().split())
 
