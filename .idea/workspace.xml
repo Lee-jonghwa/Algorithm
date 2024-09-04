@@ -4,7 +4,7 @@
     <list default="true" id="ffcd8dd5-e574-45a1-9ed1-b166d59e09d7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/18740_frog_jump_0903.py" beforeDir="false" afterPath="$PROJECT_DIR$/18740_frog_jump_0903.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/18565_balloon_bang_0904.py" beforeDir="false" afterPath="$PROJECT_DIR$/18565_balloon_bang_0904.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,11 +202,6 @@
           <url>file://$PROJECT_DIR$/20224_binarysearch_0827.py</url>
           <line>87</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/19899_navigation_0817.py</url>
-          <line>85</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/20097_uglynumber_0828.py</url>
