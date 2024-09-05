@@ -1,3 +1,25 @@
+import heapq
+
+max_heap = []
+min_heap = []
+mid = 500
+
+def push(node):
+    if mid < node:
+        heapq.heappush(max_heap, node)
+    else:
+    pass
+
+N = int(input())
+for _ in range(N):
+    a, b = map(int,input().split())
+    # 두 개를 넣은 입을 업데이트 하기
+    push(a)
+    push(b)
+
+
+
+
 '''
 최대힙, 최소힙
 최대힙
@@ -8,7 +30,7 @@
 1. 부모노드 <= 자식노드
 2. 루트 노드 가장 작은값
 '''
-
+"""
 import heapq
 
 max_heap = []
@@ -35,7 +57,7 @@ for i in range(N):
         mid = heapq.heappop(min_heap) # 가장 작은 값 빼기
 
     print(mid)
-
+"""
 
 """
 GPT
