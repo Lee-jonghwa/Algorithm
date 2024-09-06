@@ -1,3 +1,43 @@
+directions = [(1,0),(0,1),(-1,0),(0,-1)]
+
+T = int(input())
+
+for tc in range(1, T+1):
+    N = int(input())
+    arr =[list(map(int,input().split())) for _ in range(N)]
+
+    visited = [0] * (N*N+1)
+
+    # 전체를 순회하며
+    # 상하좌우에 나보다 1이 크면 visited 체크
+    for i in range(N):
+        for j in range(N):
+            for dy, dx in directions:
+                ny = i + dy
+                nx = j + dx
+                if 0<=ny<N and 0<=nx<N:
+                    # 옆이 1보다 크다면, 나는 움직일 수 있음을 표시
+                    if arr[ny][nx] == arr[i][j] + 1:
+                        visited[arr[i][j]] = 1
+                        # 체크된 순간 다른방을 볼 필요가 없음
+                        break
+
+    # cnt: 하나씩 체크/ max_cnt: 결과값 / # 시작 위치
+    cnt = 1
+    max_cnt = start = 0
+
+    for i in range(N*N -1, -1, -1):
+        if visited[i]:
+            cnt += 1
+        else:
+            if max_cnt <= cnt:
+                max_cnt = cnt
+                start = i + 1 # 배열 안에서 나오도록
+            cnt = 1
+            # cnt 초기화
+
+    print(f'#{tc} {start} {max_cnt}')
+
 # def DFS(s, n):                          # s: 시작정점 n: 정점개수(1번부터인 정점의 마지막)
 #     visited = [0]*(n+1)                 # 방문한 정점을 표시
 #     stack = []                          # 스택 생성
