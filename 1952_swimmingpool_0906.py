@@ -16,9 +16,77 @@ sys.stdin = open('1952_input.txt','r')
 # 연권은 사면 무조건 1월
 # dp가 좋아보이긴 한데
 
+## 어쩄든 끝까지 가야하니, 순열 조합인 dfs 또는 일직선 진행이므로 dp접근
+
+
+# 1. dfs
+"""
+def dfs(month, sum_v):
+    global min_cost
+
+    # 종료조건
+    if month >= 12: # 11월에 3달 하는 경우도 있으므로 12 넘을 때 정지, 사실상 도착지점 12월
+        if min_cost > sum_v:
+            min_cost = sum_v
+        return
+
+
+    # 4개 조건
+    # 1일치
+    dfs(month+1, sum_v + schedule[month]*costs[0])
+    # 한 달 -> 한 달부터는 일수 따질 필요 없음
+    dfs(month+1, sum_v + costs[1])
+    # 세 달
+    dfs(month+3, sum_v + costs[2])
+    # 1년
+    dfs(month+12, sum_v + costs[3])
+    return
+
+
+T = int(input())
+for tc in range(1, T+1):
+    # 1일 / 1달 / 3개월 / 1년
+    costs = list(map(int,input().split()))
+    schedule = list(map(int,input().split()))
+
+    min_cost = 1e10
+
+    path = []
+    visited = [0] * 13
+
+    dfs(0, 0)
+
+    print(f'#{tc} {min_cost}')
+"""
+
+# 2. dp
+
+
+T = int(input())
+for tc in range(1, T+1):
+    # 1일 / 1달 / 3개월 / 1년
+    costs = list(map(int,input().split()))
+    schedule = [0] + list(map(int,input().split())) # 12 개월 맞추기
+
+    min_cost = 1e10
+
+    dp = [0] * 13 # 12월에 1년 하는 것 고려해 넉넉히, 비용이 발생하지 않으면 0원이므로 초기값 0
+
+
+    for i in range(1, 13): # 1월~12월
+        # 3개월 미만까지는 1개월 또는 1일
+        dp[i] = min(dp[i-1] + (schedule[i] * costs[0]), dp[i-1] + costs[1])
+
+        if i >= 3:
+            dp[i] = min(dp[i-3] + costs[2], dp[i])
+
+
+    result = min(dp[12], costs[3])
+    print(f'#{tc} {result}')
 
 # 시작점: 1월, 끝점: 12월
 # 누적금액 가지고 가기
+
 """
 def dfs(month, sum_cost):
     global ans
@@ -49,7 +117,7 @@ for tc in range(1,T+1):
 
 
 # DP접근
-
+"""
 T = int(input())
 for tc in range(1,T+1):
     costs = list(map(int,input().split()))
@@ -67,3 +135,4 @@ for tc in range(1,T+1):
 
     result = min(dp[12], costs[3])
     print(f'#{tc} {result}')
+"""
