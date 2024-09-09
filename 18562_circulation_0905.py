@@ -1,3 +1,6 @@
+import sys
+sys.stdin = open('18562_input.txt', 'r')
+
 # 코딩선은  N개의 지하철 역을 순환하는 순환선
 # 노선의 타당도는 (A + B)^2 + (C+D)^2
 
@@ -6,6 +9,57 @@
 # 인접한 두 역에서 출발하거나, 인접한 두 역으로 도착하는 직통 노선은 건설할 수 없다.
 
 # 1개의 역에 2개의 직통 노선이 있어서는 안 된다.
+
+def cal_tadang(A, B, C, D):
+    return (lst[A] + lst[B]) ** 2 + (lst[C] + lst[D]) ** 2
+
+def dfs(lev):
+    global max_v
+
+    # 해당 하는 위치 4개 뽑으면
+    if lev == 4:
+        A, B, C, D = path[0], path[1], path[2], path[3]
+
+        # 교차 하는 조건
+        # 조건 줄이기 위한 스왑
+        if A > B:
+            A, B = B, A
+
+        # 둘 중 하나라도 있으면 교차 됨
+        if A < C < B or A < D < B:
+            return
+
+        max_v = max(max_v, cal_tadang(A, B, C, D))
+        return
+
+    # 후보는 모든 곳
+    for i in range(N):
+        # 이전에 갔던 곳 제외
+        if visited[i] == 1: continue
+
+        # 양 옆이 방문했던 곳 제외 -> 원형 인덱스
+        if visited[(i-1) % N] or visited[(i+1) % N]: continue
+
+        path.append(i)
+        visited[i] = 1
+        dfs(lev + 1)
+        visited[i] = 0
+        path.pop()
+
+T = int(input())
+for tc in range(1, T+1):
+    N = int(input())
+    lst = list(map(int,input().split()))
+
+    # 후보지 저장
+    path = []
+    # 안 되는 곳 체크하기
+    visited = [0] * (N)
+
+    max_v = 0
+
+    dfs(0)
+    print(f'#{tc} {max_v}')
 
 # 수환님 풀이
 """
@@ -30,6 +84,7 @@ for test_case in range(1,1+T):
     print(f'#{test_case} {ans}')
 """
 
+"""
 # dfs로 가보자
 
 def cal_tadang(path, stations):
@@ -59,6 +114,8 @@ def dfs(lev): # 10개 중 4개 고르는 선택지
         # 양 옆 체크
         # 원형 인덱스 반영
         if visited[(i-1) % N] or visited[(i + 1) % N]: continue
+        
+        #
 
         path.append(i)
         visited[i] = 1
@@ -78,7 +135,7 @@ for tc in range(1, T+1):
     dfs(0)
 
     print(f'#{tc} {max_v}')
-
+"""
 
 
 """

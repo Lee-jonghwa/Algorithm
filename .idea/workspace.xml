@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffcd8dd5-e574-45a1-9ed1-b166d59e09d7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/12741_twolights_0909.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/18567_agriculture_robot_0905.py" beforeDir="false" afterPath="$PROJECT_DIR$/18567_agriculture_robot_0905.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1952_swimmingpool_0906.py" beforeDir="false" afterPath="$PROJECT_DIR$/1952_swimmingpool_0906.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2819_gridnumberpaste_0906.py" beforeDir="false" afterPath="$PROJECT_DIR$/2819_gridnumberpaste_0906.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/18562_circulation_0905.py" beforeDir="false" afterPath="$PROJECT_DIR$/18562_circulation_0905.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/18563_eating_apple_0904.py" beforeDir="false" afterPath="$PROJECT_DIR$/18563_eating_apple_0904.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/18565_balloon_bang_0904.py" beforeDir="false" afterPath="$PROJECT_DIR$/18565_balloon_bang_0904.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +46,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Python.18567_agriculture_robot_0905">
-    <configuration name="1486_janghoonshelf_0906" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.몬스터마스터.sol">
+    <configuration name="18562_circulation_0905" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -58,7 +59,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1486_janghoonshelf_0906.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/18562_circulation_0905.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -67,7 +68,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="18567_agriculture_robot_0905" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="18563_eating_apple_0904" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -79,7 +80,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/18567_agriculture_robot_0905.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/18563_eating_apple_0904.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -88,7 +89,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="1861_rectangularroom_0906" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="18565_balloon_bang_0904" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -100,7 +101,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1861_rectangularroom_0906.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/18565_balloon_bang_0904.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -109,19 +110,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="1952_swimmingpool_0906" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="마법의물뿌리개.sol" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="SDK_HOME" value="C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads/a형 (1)" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1952_swimmingpool_0906.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/a형 (1)/마법의물뿌리개.sol.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -130,19 +131,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="2819_gridnumberpaste_0906" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="몬스터마스터.sol" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="SDK_HOME" value="C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads/a형 (1)" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2819_gridnumberpaste_0906.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/a형 (1)/몬스터마스터.sol.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -152,19 +153,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.1861_rectangularroom_0906" />
-      <item itemvalue="Python.1486_janghoonshelf_0906" />
-      <item itemvalue="Python.2819_gridnumberpaste_0906" />
-      <item itemvalue="Python.1952_swimmingpool_0906" />
-      <item itemvalue="Python.18567_agriculture_robot_0905" />
+      <item itemvalue="Python.18562_circulation_0905" />
+      <item itemvalue="Python.18565_balloon_bang_0904" />
+      <item itemvalue="Python.18563_eating_apple_0904" />
+      <item itemvalue="Python.마법의물뿌리개.sol" />
+      <item itemvalue="Python.몬스터마스터.sol" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.18567_agriculture_robot_0905" />
-        <item itemvalue="Python.2819_gridnumberpaste_0906" />
-        <item itemvalue="Python.1952_swimmingpool_0906" />
-        <item itemvalue="Python.1861_rectangularroom_0906" />
-        <item itemvalue="Python.1486_janghoonshelf_0906" />
+        <item itemvalue="Python.몬스터마스터.sol" />
+        <item itemvalue="Python.마법의물뿌리개.sol" />
+        <item itemvalue="Python.18563_eating_apple_0904" />
+        <item itemvalue="Python.18565_balloon_bang_0904" />
+        <item itemvalue="Python.18562_circulation_0905" />
       </list>
     </recent_temporary>
   </component>
@@ -327,18 +328,48 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/18562_circulation_0905.py</url>
-          <line>77</line>
+          <line>134</line>
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/18562_circulation_0905.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="61" />
+          <url>file://$PROJECT_DIR$/4008_makingnumber_0909.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/4008_makingnumber_0909.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/4008_makingnumber_0909.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/18562_circulation_0905.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/18563_eating_apple_0904.py</url>
+          <line>75</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/Downloads/a형 (1)/마법의물뿌리개.sol.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/Downloads/a형 (1)/마법의물뿌리개.sol.py</url>
           <line>17</line>
-          <option name="timeStamp" value="64" />
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/Downloads/a형 (1)/몬스터마스터.sol.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="77" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
