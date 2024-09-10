@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffcd8dd5-e574-45a1-9ed1-b166d59e09d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/12741_twolights_0909.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/18562_circulation_0905.py" beforeDir="false" afterPath="$PROJECT_DIR$/18562_circulation_0905.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/18563_eating_apple_0904.py" beforeDir="false" afterPath="$PROJECT_DIR$/18563_eating_apple_0904.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/18565_balloon_bang_0904.py" beforeDir="false" afterPath="$PROJECT_DIR$/18565_balloon_bang_0904.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +42,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Python.몬스터마스터.sol">
-    <configuration name="18562_circulation_0905" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.09_10_02_00">
+    <configuration name="0910" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -59,7 +55,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/18562_circulation_0905.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0910.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="09_10_02_00" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/09_10_02_00.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,19 +170,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.18562_circulation_0905" />
       <item itemvalue="Python.18565_balloon_bang_0904" />
       <item itemvalue="Python.18563_eating_apple_0904" />
       <item itemvalue="Python.마법의물뿌리개.sol" />
-      <item itemvalue="Python.몬스터마스터.sol" />
+      <item itemvalue="Python.0910" />
+      <item itemvalue="Python.09_10_02_00" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.몬스터마스터.sol" />
+        <item itemvalue="Python.09_10_02_00" />
+        <item itemvalue="Python.0910" />
         <item itemvalue="Python.마법의물뿌리개.sol" />
         <item itemvalue="Python.18563_eating_apple_0904" />
         <item itemvalue="Python.18565_balloon_bang_0904" />
-        <item itemvalue="Python.18562_circulation_0905" />
       </list>
     </recent_temporary>
   </component>
@@ -355,21 +372,6 @@
           <url>file://$PROJECT_DIR$/18563_eating_apple_0904.py</url>
           <line>75</line>
           <option name="timeStamp" value="71" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$USER_HOME$/Downloads/a형 (1)/마법의물뿌리개.sol.py</url>
-          <line>51</line>
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$USER_HOME$/Downloads/a형 (1)/마법의물뿌리개.sol.py</url>
-          <line>17</line>
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$USER_HOME$/Downloads/a형 (1)/몬스터마스터.sol.py</url>
-          <line>41</line>
-          <option name="timeStamp" value="77" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
