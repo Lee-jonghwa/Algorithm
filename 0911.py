@@ -389,13 +389,15 @@ print(result)
 # 2. 6의 보스가 0이 아니면? 재귀
 # 3. 5의 보스가 0이면? return 5
 
-
+"""
 def Find(x):
     if boss[x] == 0:
         return x
 
     result = Find(boss[x])
+    boss[x] = result # 경로 압축
     return result
+    # return Find(boss[x]) # 경로 압축 반영
 
 def Union(t1, t2):
     a = Find(t1)
@@ -410,7 +412,280 @@ Union(6, 7)
 Union(5, 6)
 Union(1, 2)
 
-if Find(2) == Find(6):
+if Find(1) == Find(2):
     print('같은 그룹')
 else:
     print('다른 그룹')
+"""
+
+
+"""
+### Union-Find 문제
+# 같은 그룹이면 'O'
+# 다른 그룹이면 'X'
+
+def Find(x):
+    if boss[x] == 0:
+        return x
+
+    result = Find(boss[x])
+    boss[x] = result
+    return result
+
+
+def Union(t1, t2):
+    A = Find(t1)
+    B = Find(t2)
+    if A == B: return # 이미 보스가 같으면 A
+    boss[B] = A # 아니면 B를 바꿈
+
+
+N = int(input())
+boss = [0]*100
+for i in range(N):
+    a, b = map(int,input().split())
+    Union(a, b)
+
+
+Q = int(input())
+for i in range(Q):
+    c, d = map(int,input().split())
+    if Find(c) == Find(d): print('O')
+    else: print('X')
+
+
+print(boss)
+"""
+
+
+# 문제 veintidos: cycle 판단 코드
+# cycle이 있다 => 간선을 한 번씩만 이용했을 때 제자리로 돌아올 수 있음
+
+## Cycle의 여부를 Union-Find로 찾을 수 있음(양방향만 가능)
+
+
+"""
+4
+A B
+B C
+D E
+C A
+
+"""
+
+# 전략 1. 문자를 아스키코드로 바꿈
+# 전략 2. a와 b가 같은 그룹이면 "Cycle 발견!!" 출력
+
+"""
+Cycle 발견 시 발견이라고 출력
+"""
+
+"""
+def Find(x):
+    if boss[x] == 0: return x
+
+    result = Find(boss[x])
+    boss[x] = result
+    return result
+
+def Union(t1, t2):
+    a = Find(t1)
+    b = Find(t2)
+    if a == b: return 
+    else: boss[b] = a
+
+N = int(input())
+boss = [0] * 100
+
+for _ in range(4):
+    a, b = map(ord,input().split())
+    if Find(a) == Find(b):
+        print("cycle 발견!!!")
+        break
+    else:
+        Union(a, b)
+
+## 라우터에 활용하는 것이 MST
+# -> 라우터는 경로를 돌아가더라도 트래픽이 적은 경로로 연결 하는 것이 효율 좋음
+"""
+
+# Kruskal Algorithm
+
+"""
+9
+A B 3
+A C 5
+B C 2
+B D 1
+A D 15
+C D 2
+E D 3
+E D 6
+A E 18
+
+"""
+
+
+"""
+# 1. 비용을 기준으로 오름차순
+
+# 2. 같은 그룹인지 판단하고 다른 그룹이면 그룹맺기
+
+# 다 같이 친구가 되려면 어떻게 해야할까?
+
+def Find(x):
+    if boss[x] == 0: return x
+
+    result = Find(boss[x])
+    boss[x] = result
+    return result
+
+
+def Union(t1, t2):
+    a = Find(t1)
+    b = Find(t2)
+    if a == b: return
+    else: boss[b] = a
+
+N, M = map(int, input().split())
+arr = []
+
+for _ in range(N):
+    a, b, c = input().split()
+    arr.append((int(c), ord(a), ord(b)))
+
+boss = [0] * 100
+arr.sort()
+
+sum_v = 0
+cnt = 0
+
+for i in range(N):
+    a, b, c = arr[i][1],arr[i][2], arr[i][0]
+    if Find(a) == Find(b): continue
+    if cnt == M-1: break
+    else:
+        Union(a, b)
+        cnt += 1
+        sum_v += c
+
+print(sum_v)
+"""
+
+"""
+
+alist= [[0]*6 for _ in range(6)]
+
+alist[0][1] = 15
+alist[1][2] = 5
+alist[2][3] = 6
+alist[2][4] = 2
+alist[3][5] = 7
+alist[4][5] = 1
+alist[0][3] = 30
+
+print(alist)
+
+used = [0] * 6
+min_v = float('inf')
+
+def dfs(now, end, sum_v):
+    global min_v
+    if now == end:
+        min_v = min(min_v,sum_v)
+        return
+
+    for i in range(len(alist[now])):
+        if alist[now][i] == 0: continue
+        if used[i]: continue
+        used[i] = 1
+        dfs(i,end, sum_v + alist[now][i])
+        used[i] = 0
+
+dfs(0, 5, 0)
+
+print(min_v)
+"""
+
+
+"""import heapq
+
+MAP = [[0] * 6 for _ in range(6)]
+
+MAP[0][1] = 15
+MAP[0][2] = 30
+MAP[1][2] = 5
+MAP[2][3] = 6
+MAP[2][4] = 2
+MAP[3][5] = 7
+MAP[4][5] = 1
+
+
+def dijkstra(start):
+    n = len(MAP)  # 노드 수 6개
+    result = [float('inf')] * n
+    result[start] = 0 # 시작 노드 초기화
+
+    #우선순위 큐 초기화
+    q = [(0, start)]  # 비용, 노드
+
+    while q:
+        price, now = heapq.heappop(q) # 현재 최소 비용인 노드 선택
+        if result[now] < price: continue # 이미 처리된 노드면 패스
+
+        for i in range(n):
+            if MAP[now][i] == 0: continue
+            next_price = MAP[now][i] # 다음 노드까지의 비용
+            price_sum = price + next_price
+            if result[i] > price_sum: # 최단비용 갱신
+                result[i] = price_sum
+                heapq.heappush(q, (price_sum,i)) # 새로운 경로를 큐에 추가
+
+    return  result
+
+
+
+result = dijkstra(0)
+
+print(result)
+print(result[5])
+"""
+
+
+import heapq
+
+arr = [[0]*6 for _ in range(6)]
+
+arr[0][1] = 5
+arr[0][2] = 10
+arr[1][0] = 5
+arr[1][5] = 9
+arr[2][5] = 1
+arr[0][3] = 7
+arr[3][4] = 1
+arr[4][5] = 6
+
+
+def dijkstra(start):
+    n = len(arr)
+    result = [float('inf')] * n
+    result[start] = 0
+
+    # 우선순위 큐 초기화
+    q = [(0, start)] # 비용, 노드
+
+    while q:
+        price, now = heapq.heappop(q)
+        if result[now] < price: continue # 이미 처리된 노드면 패스
+
+        for i in range(n):
+            if arr[now][i] == 0: continue
+            next_price = arr[now][i]
+            price_sum = price + next_price
+            if result[i] > price_sum:
+                result[i] = price_sum
+                heapq.heappush(q,(price_sum,i))
+    return result
+
+result = dijkstra(0)
+print(result)
