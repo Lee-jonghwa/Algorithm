@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ffcd8dd5-e574-45a1-9ed1-b166d59e09d7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0911.py" beforeDir="false" afterPath="$PROJECT_DIR$/0911.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,10 +169,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.마법의물뿌리개.sol" />
       <item itemvalue="Python.0910" />
-      <item itemvalue="Python.09_10_02_00" />
       <item itemvalue="Python.0911" />
+      <item itemvalue="Python.09_10_02_00" />
+      <item itemvalue="Python.마법의물뿌리개.sol" />
       <item itemvalue="Python.union_find_21번_22번" />
     </list>
     <recent_temporary>
